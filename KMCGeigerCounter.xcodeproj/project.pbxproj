@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020153BF518C13D29DCC398B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BB9156894DAE9BB8D0B34B /* libPods.a */; };
 		0AA84B1019F7199D00B792CF /* KMCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA84B0E19F7199D00B792CF /* KMCTableViewCell.m */; };
 		0AA84B1319F719CC00B792CF /* KMCComplexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA84B1219F719CC00B792CF /* KMCComplexTableViewCell.xib */; };
 		0AA84B1719F721F700B792CF /* KMCSimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA84B1619F721F700B792CF /* KMCSimpleTableViewCell.xib */; };
@@ -19,6 +20,7 @@
 		0AAC72F619F7096D00D6522D /* KMCGeigerCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC72F419F7096D00D6522D /* KMCGeigerCounter.m */; };
 		0AAC72F919F70C1A00D6522D /* KMCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC72F819F70C1A00D6522D /* KMCTableViewController.m */; };
 		0AAC72FC19F70CB000D6522D /* KMCTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC72FB19F70CB000D6522D /* KMCTableItem.m */; };
+		27CE02E61A1DEE530005D857 /* KMCComplexTableCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CE02E51A1DEE530005D857 /* KMCComplexTableCellNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		0AAC72F819F70C1A00D6522D /* KMCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCTableViewController.m; sourceTree = "<group>"; };
 		0AAC72FA19F70CB000D6522D /* KMCTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCTableItem.h; sourceTree = "<group>"; };
 		0AAC72FB19F70CB000D6522D /* KMCTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCTableItem.m; sourceTree = "<group>"; };
+		27CE02E41A1DEE530005D857 /* KMCComplexTableCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCComplexTableCellNode.h; sourceTree = "<group>"; };
+		27CE02E51A1DEE530005D857 /* KMCComplexTableCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCComplexTableCellNode.m; sourceTree = "<group>"; };
+		39BB9156894DAE9BB8D0B34B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B3EEC5764C8F60A60A7A29 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		61F3EF32483909310AF1F8F6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020153BF518C13D29DCC398B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,8 @@
 				0AAC72CA19F7085800D6522D /* ExampleApplication */,
 				0AAC72E419F7085800D6522D /* Tests */,
 				0AAC72C919F7085800D6522D /* Products */,
+				1138F59305CFD71F52C72CC0 /* Pods */,
+				F642DDC2042CBEC1F93D6D2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +115,8 @@
 				0AA84B0E19F7199D00B792CF /* KMCTableViewCell.m */,
 				0AA84B1619F721F700B792CF /* KMCSimpleTableViewCell.xib */,
 				0AA84B1219F719CC00B792CF /* KMCComplexTableViewCell.xib */,
+				27CE02E41A1DEE530005D857 /* KMCComplexTableCellNode.h */,
+				27CE02E51A1DEE530005D857 /* KMCComplexTableCellNode.m */,
 				0AAC72D819F7085800D6522D /* Images.xcassets */,
 				0AAC72DA19F7085800D6522D /* LaunchScreen.xib */,
 				0AAC72CB19F7085800D6522D /* Supporting Files */,
@@ -148,6 +160,23 @@
 			path = KMCGeigerCounter;
 			sourceTree = "<group>";
 		};
+		1138F59305CFD71F52C72CC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61F3EF32483909310AF1F8F6 /* Pods.debug.xcconfig */,
+				47B3EEC5764C8F60A60A7A29 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F642DDC2042CBEC1F93D6D2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39BB9156894DAE9BB8D0B34B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AAC72EB19F7085800D6522D /* Build configuration list for PBXNativeTarget "KMCGeigerCounter" */;
 			buildPhases = (
+				927813F5AC577F59CE6C4AFF /* Check Pods Manifest.lock */,
 				0AAC72C419F7085800D6522D /* Sources */,
 				0AAC72C519F7085800D6522D /* Frameworks */,
 				0AAC72C619F7085800D6522D /* Resources */,
+				FD01CB3B7A4B15150CAAB58D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +276,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		927813F5AC577F59CE6C4AFF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD01CB3B7A4B15150CAAB58D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0AAC72C419F7085800D6522D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,6 +320,7 @@
 				0AAC72F919F70C1A00D6522D /* KMCTableViewController.m in Sources */,
 				0AAC72CE19F7085800D6522D /* main.m in Sources */,
 				0AAC72F619F7096D00D6522D /* KMCGeigerCounter.m in Sources */,
+				27CE02E61A1DEE530005D857 /* KMCComplexTableCellNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +432,7 @@
 		};
 		0AAC72EC19F7085800D6522D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F3EF32483909310AF1F8F6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ExampleApplication/Info.plist";
@@ -379,6 +445,7 @@
 		};
 		0AAC72ED19F7085800D6522D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B3EEC5764C8F60A60A7A29 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/ExampleApplication/Info.plist";

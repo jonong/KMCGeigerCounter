@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, KMCTableViewCellType) {
     KMCTableViewCellTypeComplex,
 };
 
-@interface KMCTableViewController : UITableViewController
+@interface KMCTableViewController : UIViewController
 
 @property (nonatomic, assign) KMCTableViewCellType cellType;
 
